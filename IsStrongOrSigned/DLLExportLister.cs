@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 // ReSharper disable InconsistentNaming
 // ReSharper disable IdentifierTypo
+// ReSharper disable FieldCanBeMadeReadOnly.Local
 
 namespace IsStrongOrSigned
 {
