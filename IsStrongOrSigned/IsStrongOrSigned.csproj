@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <OutputType>WinExe</OutputType>
+        <TargetPlatformMinVersion>10.0.20348.0</TargetPlatformMinVersion>
+        <UseWindowsForms>true</UseWindowsForms>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <LangVersion>latest</LangVersion>
+        <AnalysisLevel>preview</AnalysisLevel>
+        <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+        <WarningLevel>9999</WarningLevel>
+        <NeutralLanguage>en</NeutralLanguage>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <ApplicationIcon>DigSign.ico</ApplicationIcon>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <PackageIcon>DigSign.ico</PackageIcon>
+        <AssemblyVersion>23.02.12.31</AssemblyVersion>
+        <FileVersion>23.02.12.31</FileVersion>
+        <IsPublishable>False</IsPublishable>
+        <RepositoryUrl>https://github.com/Smurf-IV/IsStrongOrSigned</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+    <ItemGroup>
+      <Content Include="DigSign.ico" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="..\README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Krypton.Toolkit.Nightly" Version="80.23.1.30-alpha" />
+        <PackageReference Include="Microsoft.CodeAnalysis.Metrics" Version="3.3.4" Condition="'$(Configuration)' == 'Debug'" />
+        <PackageReference Include="Microsoft.PowerShell.5.1.ReferenceAssemblies" Version="1.0.0" />
+        <PackageReference Include="Microsoft.PowerShell.Native" Version="7.4.0-preview.2" />
+        <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.4.33" Condition="'$(Configuration)' == 'Debug'">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="NLog" Version="5.1.1" />
+        <PackageReference Include="Ookii.Dialogs.WinForms" Version="4.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Management" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="DigSign.ico">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33402.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsStrongOrSigned", "IsStrongOrSigned\IsStrongOrSigned.csproj", "{786CDFBE-422D-4CF8-BEF1-F97F8E780658}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Z_SolutionItems", "Z_SolutionItems", "{C468457E-6F33-465D-B908-70FF02EE9EA6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pictures", "Pictures", "{279F40D9-1BB6-43FE-8986-A146010ED551}"
+	ProjectSection(SolutionItems) = preProject
+		Pictures\RunningApp.png = Pictures\RunningApp.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{786CDFBE-422D-4CF8-BEF1-F97F8E780658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786CDFBE-422D-4CF8-BEF1-F97F8E780658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786CDFBE-422D-4CF8-BEF1-F97F8E780658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786CDFBE-422D-4CF8-BEF1-F97F8E780658}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{279F40D9-1BB6-43FE-8986-A146010ED551} = {C468457E-6F33-465D-B908-70FF02EE9EA6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19E7CA89-DD3B-4FC2-AFC3-64BD40842E03}
+	EndGlobalSection
+EndGlobal
