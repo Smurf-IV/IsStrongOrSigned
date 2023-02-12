@@ -33,6 +33,7 @@
 - [ ] Other file data
 - [ ] Language handling
 - [ ] Alow theme changing
+- [ ] Create installer
   
 Please help, by giving any feedback and suggestions via the github "Issues".
 
